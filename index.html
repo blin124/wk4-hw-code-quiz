@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head  lang="en">
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
+        <title>Code Quiz</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <a class="nav-link" href="./highscore.html">View Highscores</a>
+            <div class="a">
+                Time:  <span class="a" id="time">60</span>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div id="stepOne">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit provided.
+            <br>Keep in mind that incorrect answers will then penalise your score/time by ten seconds!
+            <br>You have 75 seconds to complete.
+            <br>Do your best!
+            </p>
+            <hr>
+            <div class="row">
+                <div class="center">
+                    <button type="button" class="btn btn-success">Start Quiz</button>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepTwo" class="hidden">
+                <h2>Commonly used data types DO NOT include:</h2>
+                <button type="button" id="stepTwo-1" class="btn btn-success quiz-btn">1. strings</button>
+                <button type="button" id="stepTwo-2" class="btn btn-success quiz-btn">2. booleans</button>
+                <button type="button" id="stepTwo-3" class="btn btn-success quiz-btn">3. alerts</button>
+                <button type="button" id="stepTwo-4" class="btn btn-success quiz-btn">4. numbers</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepThree" class="hidden">
+                <h2>Arrays in JavaScript can be used to store ____.</h2>
+                <button type="button" id="stepThree-1" class="btn btn-success quiz-btn">1. numbers and strings</button>
+                <button type="button" id="stepThree-2" class="btn btn-success quiz-btn">2. other arrays</button>
+                <button type="button" id="stepThree-3" class="btn btn-success quiz-btn">3. booleans</button>
+                <button type="button" id="stepThree-4" class="btn btn-success quiz-btn">4. all of the above</button>
+            <hr>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepFour" class="hidden">
+                <h2>The condition in an if / else statement is enclosed within _____.</h2>
+                <button type="button" id="stepFour-1" class="btn btn-success quiz-btn">1. quotes</button>
+                <button type="button" id="stepFour-2" class="btn btn-success quiz-btn">2. curly brackets</button>
+                <button type="button" id="stepFour-3" class="btn btn-success quiz-btn">3. parentheses</button>
+                <button type="button" id="stepFour-4" class="btn btn-success quiz-btn">4. square brackets</button>
+            <hr>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepFive" class="hidden">
+                <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
+                <button type="button" id="stepFive-1" class="btn btn-success quiz-btn">1. commas</button>
+                <button type="button" id="stepFive-2" class="btn btn-success quiz-btn">2. curly brackets</button>
+                <button type="button" id="stepFive-3" class="btn btn-success quiz-btn">3. quotes</button>
+                <button type="button" id="stepFive-4" class="btn btn-success quiz-btn">4. parentheses</button>
+            <hr>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepSix" class="hidden">
+                <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+                <button type="button" id="stepSix-1" class="btn btn-success quiz-btn">1. JavaScript</button>
+                <button type="button" id="stepSix-2" class="btn btn-success quiz-btn">2. terminal / bash</button>
+                <button type="button" id="stepSix-3" class="btn btn-success quiz-btn">3. for loops</button>
+                <button type="button" id="stepSix-4" class="btn btn-success quiz-btn">4. console log</button>
+            <hr>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+            <div id="stepSeven" class="hidden">
+                <h2>All done!</h2>
+                <span>Your final score is</span>
+                <span id="finalScore">0</span><span> out of 60</span>
+                <p>Enter initials:
+                    <input id="input" placeholder="Eg. CZ">
+                    <button type="button" id="stepSeven-1" class="btn btn-success">Submit</button>
+                    
+                </p>
+            <hr>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <div id="highscores" class="hidden">
+                    <h1>Highscores</h1>
+                    <br>    
+                    <input id="input" class="hidden">
+                    <button type="button" id="stepLast-1" class="btn btn-success">Go Back</button>
+                    <button type="button" id="stepLast-2" class="btn btn-success">Clear Highscores</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="feedback">
+            <div class="wrong hidden">Wrong</div> 
+            <div class="correct hidden">Correct</div>
+        </div>
+        <br>
+
+        <script src="script.js"></script>
+    </body>
+</html>
