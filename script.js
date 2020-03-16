@@ -7,6 +7,7 @@ var stepFive = document.getElementById("stepFive");
 var stepSix = document.getElementById("stepSix");
 var stepSeven = document.getElementById("stepSeven");
 var highscores = document.getElementById("highscores");
+var viewHighscores = document.getElementById("viewHighscores");
 
 // var step 2 buttons
 var stepTwoOne = document.getElementById("stepTwo-1");
@@ -252,9 +253,16 @@ initials.addEventListener("input", function(){
     });
 });
 
+// view highscores button
+viewHighscores.addEventListener("click", function(){
+    stepOne.setAttribute("class", "hidden");
+    highscores.setAttribute("class", "visible");
+})
+
 // Step highscores buttons eventListener
 goBack.addEventListener("click", function(){
-    window.location.href = "./index.html";
+    stepOne.setAttribute("class", "visible");
+    highscores.setAttribute("class", "hidden");
 })
 
 clear.addEventListener("click", function(){
