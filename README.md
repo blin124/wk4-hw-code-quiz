@@ -14,5 +14,8 @@ THEN I can save my initials and score
 ```
 
 The following animation demonstrates the application functionality:
-
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
+
+Github:
+https://blin124.github.io/wk4-hw-code-quiz/index.html
+https://github.com/blin124/wk4-hw-code-quiz
