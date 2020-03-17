@@ -41,7 +41,8 @@ var stepSixFour = document.getElementById("stepSix-4");
 
 // var step 7 buttons
 var stepSevenOne = document.getElementById("stepSeven-1");
-var initials = document.getElementById("input");
+var inputIn = document.getElementById("inputIn");
+var inputHs = document.getElementById("inputHs");
 
 // var for highscores page buttons
 var goBack = document.getElementById("stepLast-1");
@@ -242,8 +243,8 @@ var initialsInput = "";
 
 // Step 7 = all done page eventlistener (button for submit)
 
-initials.addEventListener("input", function(){
-    initialsInput.textContent = "";
+inputHs.addEventListener("input", function(){
+    inputIn.textContent = "";
     removefeedback();
 
     stepSevenOne.addEventListener("click", function(){
