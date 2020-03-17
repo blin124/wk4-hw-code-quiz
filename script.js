@@ -242,9 +242,9 @@ var initialsInput = "";
 
 // Step 7 = all done page eventlistener (button for submit)
 stepSevenOne.addEventListener("click", function(){
-     inputIn.addEventListener("", function(){
-        inputIn.textContent = "";
-        removefeedback();
+    inputIn.addEventListener("input", function(){
+    inputIn.textContent = "";
+    removefeedback();
         
     });
         highscores.setAttribute("class", "visible");
