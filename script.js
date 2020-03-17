@@ -241,11 +241,15 @@ stepSixFour.addEventListener("click", function(){
 var initialsInput = "";
 
 // Step 7 = all done page eventlistener (button for submit)
-
-inputIn.addEventListener("input", function(){
-    inputIn.textContent = "";
-    removefeedback();
-});
+stepSevenOne.addEventListener("click", function(){
+     inputIn.addEventListener("", function(){
+        inputIn.textContent = "";
+        removefeedback();
+        
+    });
+        highscores.setAttribute("class", "visible");
+        stepSeven.setAttribute("class", "hidden");
+ });
 
 // view highscores button
 viewHighscores.addEventListener("click", function(){
